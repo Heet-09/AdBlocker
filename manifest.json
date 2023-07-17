@@ -1,0 +1,24 @@
+{
+    "name":"Simple Ad Blocker",
+    "version":"1.0.0",
+    "manifest_version":3,
+    
+    "description":"it is simple ad extension which blocks out all the ad on your webpages",
+    "icons":{
+        "16":"adblock16x16.png",
+        "48":"adblock48x48.png",
+        "128":"adblock128x128.png"
+        },
+    "permissions":[
+        "declarativeNetRequest"
+    ],
+    "declarative_net_request":{
+        "rule_resources":[
+            {
+                "id":"ruleset_1",
+                "enabled":true,
+                 "path":"rules.json"
+            }
+        ]
+    }
+}
